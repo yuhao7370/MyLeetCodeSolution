@@ -57,6 +57,14 @@
         "xmemory": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "array": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "xtree": "cpp",
+        "string": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp",
+        "optional": "cpp"
     }
 }
