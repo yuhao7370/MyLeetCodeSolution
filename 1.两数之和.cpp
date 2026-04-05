@@ -1,5 +1,6 @@
 
-# include<vector>
+#include <vector>
+#include <unordered_map>
 using namespace std;
 
 /*
@@ -12,7 +13,18 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        
+        unordered_map<int, int> ump;
+        vector<int> ansvec;
+        for (int i = 0; i < nums.size(); ++i) {
+            int need = target - nums[i];
+
+            if (ump.find(need) != ump.end()) {
+                return {ump[need], i};
+            }
+
+            ump[nums[i]] = i;
+        }
+        return ansvec;
     }
 };
 // @lc code=end
